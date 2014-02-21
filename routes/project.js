@@ -3,6 +3,9 @@ var models = require('../models');
 exports.projectInfo = function(req, res) { 
   var projectID = req.params.id;
 
+  models.Project
+    .find(projectID);
+
   // query for the specific project and
   // call the following callback
 
